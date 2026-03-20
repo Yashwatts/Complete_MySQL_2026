@@ -73,17 +73,19 @@ Imagine a small company that needs to store data about employees, departments an
 
 A column or set of columns that uniquely identify each row in a table. For instance, employee_id can be a primary key if it uniquely identifies every employee.
 
+Example: An Aadhar Number or a student's Roll Number.
+
 ## Foreign Key
 
 A column in one table that refers to the primary key in another table. For example, a department_id in the Employees table that references the department_id in a Departments table.
 
+Example: A department_id in an Employees Table points to the full department details in a separate Departments Table to avoid repeating data.
+
 ## Relationships Between Tables
 
-One-to-One (1:1): Each row in a Table A is related to exactly one row in Table B. For example, one employee might have one unique company car assigned.
-
-One-to-Many (1:M): One row in Table A can be associated with multiple rows in Table B. For example, one department can have many employees.
-
-Many-to-Many (M:N): Multiple rows in Table A can be associated with multiple rows in Table B. For example, employees can work on multiple projects and projects can have multiple employees.
+- One-to-One (1:1): Each row in a Table A is related to exactly one row in Table B. For example, one employee might have one unique company car assigned.
+- One-to-Many (1:M): One row in Table A can be associated with multiple rows in Table B. For example, one department can have many employees.
+- Many-to-Many (M:N): Multiple rows in Table A can be associated with multiple rows in Table B. For example, employees can work on multiple projects and projects can have multiple employees.
 
 ## Why the Relational Model?
 
