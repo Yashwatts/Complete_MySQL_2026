@@ -69,4 +69,65 @@ INSERT INTO test2 VALUES(1.23456885);
 - Note 1: Precision (p) max value is 65 and Scale (s) max value is 30.
 - Note 2: If nothing is stored then by default it takes DECIMAL(10, 0).
 
+## 2. String (Text) Data Types
 
+| Data Type                 | Max Size                  | Storage                     | Best For                                           | Notes                                                                 | Example Usage                                |
+|--------------------------|---------------------------|-----------------------------|---------------------------------------------------|-----------------------------------------------------------------------|----------------------------------------------|
+| CHAR(n)                  | 255 characters            | Fixed n bytes               | Fixed-length strings (e.g., state codes, ISO codes) | Right-padded with spaces. Use sparingly - VARCHAR is usually better   | CHAR(2) for US state codes                   |
+| VARCHAR(n)               | 65,535 bytes              | String length + 1-2 bytes   | Variable-length strings, most text fields         | Most commonly used string type. Length is in bytes, not characters    | VARCHAR(255) for product names               |
+| TINYTEXT                 | 255 bytes                 | String length + 1 byte      | Short strings without need for index              | Cannot have default value. Rarely used - VARCHAR preferred            | Short comments or notes                      |
+| TEXT                     | 65,535 bytes              | String length + 2 bytes     | Long text like articles or descriptions           | Cannot be part of an index without length specification               | Product descriptions, short articles         |
+| MEDIUMTEXT               | 16,777,215 bytes (~16MB)  | String length + 3 bytes     | Large text documents                              | Consider performance impact on queries                                 | Blog posts, long articles                    |
+| LONGTEXT                 | 4GB                       | String length + 4 bytes     | Very large text documents                         | Use with caution - can impact performance significantly                | Document storage, large text dumps           |
+| ENUM('val1','val2',...)  | 65,535 members            | 1 or 2 bytes                | Single selection from a fixed list                | Consider VARCHAR if list might change often                            | ENUM('active','inactive','pending')          |
+| SET('val1','val2',...)   | 64 members                | 1, 2, 3, 4, or 8 bytes      | Multiple selections from a fixed list             | Can store multiple values. Use with caution                            | SET('monday','tuesday','wednesday',...)      |
+
+For Example:
+
+```sql
+CREATE TABLE product_details(
+    product_id INT AUTO_INCREMENT PRIMARY KEY, -- Unique identifier for each product
+    product_code CHAR(10), -- Fixed-length product code
+    product_name VARCHAR(100), -- Product name
+    short_description TINYTEXT, -- A brief description of the product
+    detailed_description TEXT, -- Detailed product description
+    additional_info MEDIUMTEXT, -- Additional product info like usage or warranty details
+    full_manual LONGTEXT, -- Full product manual or documentation
+    size ENUM('Small', 'Medium', 'Large'), -- Size options for the product
+    available_colors SET('Red', 'Green', 'Blue', 'Black', 'White') -- Available color options
+);
+```
+
+### A. CHAR(n)
+
+- Fixed-length string: stores strings with a fixed length of n characters.
+- If the data is shorter than n, it is padded with spaces on the right.
+- Maximum length: 255 characters.
+- Suitable for storing uniform-length data, such as codes or identifiers.
+
+### B. VARCHAR(n)
+
+- Variable-length string: stores strings up to n characters.
+- Actual storage depends on string length, plus 1 or 2 bytes for length information.
+- Maximum length: 65,535 bytes (depends on row size and character set, because each character can use different bytes).
+- Commonly used for fields like names and addresses.
+- Queries are generally fast because data is stored inside the table row.
+- During indexing, VARCHAR can be fully indexed if size is less than or equal to 767 bytes (in newer versions, this limit was increased to 3072 bytes). If greater, we use prefix indexing.
+
+### C. TINYTEXT
+
+- Stores a small text string.
+- Maximum length: 255 characters (1 byte overhead).
+- Suitable for short descriptions or small text values.
+
+### D. TEXT
+
+- For MySQL TEXT types, the inline storage threshold is 768 bytes. After this size, data moves to separate pages and only a pointer stays in the table row.
+- This can cause performance issues or slower queries because data is stored outside the main table row.
+- During indexing, TEXT cannot be fully indexed, so we use prefix indexing.
+
+### E. ENUM('val1', 'val2',...)
+
+- Enumeration type: a string object with a predefined set of possible values.
+- Each value is stored as a numeric index for efficiency.
+- Useful for fields with a limited set of options, such as gender ('Male','Female').
