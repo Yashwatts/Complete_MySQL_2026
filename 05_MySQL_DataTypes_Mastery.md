@@ -42,9 +42,9 @@ For Example:
 CREATE TABLE test1(num FLOAT);
 INSERT INTO test1 VALUES (1234567891234567);
 SELECT * FROM test1;
-```
 
 -- Output: 1.23457e15
+```
 
 ### C. Fixed-Point Types
 
@@ -58,15 +58,13 @@ For Example:
 CREATE TABLE test2 (num DECIMAL(5, 4));
 INSERT INTO test2 VALUES (1);
 SELECT * FROM test2;
-```
 
 -- Output: 1.0000
 
-```sql
 INSERT INTO test2 VALUES(1.23456885);
-```
 
 -- Output: 1.2346
+```
 
 - Note 1: Precision (p) max value is 65 and Scale (s) max value is 30.
 - Note 2: If nothing is stored then by default it takes DECIMAL(10, 0).
