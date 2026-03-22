@@ -16,7 +16,7 @@ I created this repository to:
 - SQL basics and command categories (DDL, DML, DCL, TCL)
 - MySQL installation and setup on Windows
 - Essential database terminologies
-- MySQL numeric data types (Integer, Floating-Point, Fixed-Point)
+- MySQL data types: Numeric, String, Date & Time, and Binary
 - Writing and understanding basic SQL queries
 
 ## Repository Structure
@@ -25,7 +25,7 @@ I created this repository to:
 - `02_SQL_Basics.md` - SQL fundamentals and command categories
 - `03_Install_MySQL.md` - MySQL installation guide for Windows
 - `04_Learn_Basic_Database_Terminologies.md` - Core database terms with examples
-- `05_MySQL_DataTypes_Mastery.md` - Deep dive into MySQL numeric data types with examples
+- `05_MySQL_DataTypes_Mastery.md` - Deep dive into MySQL data types (Numeric, String, Date & Time, Binary) with examples
 
 ## Who is this for?
 
