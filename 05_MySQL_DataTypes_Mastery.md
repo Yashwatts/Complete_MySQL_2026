@@ -131,3 +131,28 @@ CREATE TABLE product_details(
 - Enumeration type: a string object with a predefined set of possible values.
 - Each value is stored as a numeric index for efficiency.
 - Useful for fields with a limited set of options, such as gender ('Male','Female').
+
+## 3. Date & Time Data Types
+
+| Data Type  | Storage (Bytes) | Description                                                                 | Example               |
+|------------|------------------|-----------------------------------------------------------------------------|-----------------------|
+| DATE       | 3                | Date values from '1000-01-01' to '9999-12-31'.                            | '2026-01-01'          |
+| DATETIME   | 8                | Date and time values from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. | '2026-01-04 12:00:00' |
+| TIMESTAMP  | 4                | UTC-based timestamp from '1970-01-01 00:00:01' UTC to '2038-01-19 03:14:07' UTC. | '2026-01-04 12:00:00' |
+| TIME       | 3                | Time values from '-838:59:59' to '838:59:59'.                              | '12:34:56'            |
+| YEAR       | 1                | Year values from '1901' to '2155'.                                          | '2026'                |
+
+> Note: UTC helps represent time in a standard format across regions. MySQL can then convert and show time according to timezone settings, which makes time conversion easier and more reliable.
+
+For Example:
+
+```sql
+CREATE TABLE EventSchedule (
+    event_id INT AUTO_INCREMENT PRIMARY KEY,
+    event_date DATE, -- To store the date of the event (e.g., '2026-01-16')
+    event_datetime DATETIME, -- To store the exact date and time of the event (e.g., '2026-01-16 14:30:00')
+    event_timestamp TIMESTAMP, -- To store the exact date and time in UTC (e.g., '2026-01-16 14:30:00')
+    event_time TIME, -- To store the time of the event (e.g., '14:30:00')
+    event_year YEAR -- To store the year of the event (e.g., '2026')
+);
+```
