@@ -18,6 +18,7 @@ I created this repository to:
 - Essential database terminologies
 - MySQL data types: Numeric, String, Date & Time, and Binary
 - Database-level SQL commands (CREATE, SHOW, USE, SELECT DATABASE, DROP)
+- Table-level SQL commands (CREATE TABLE, INSERT, ALTER, DROP)
 - Writing and understanding basic SQL queries
 
 ## Repository Structure
@@ -28,6 +29,7 @@ I created this repository to:
 - `04_Learn_Basic_Database_Terminologies.md` - Core database terms with examples
 - `05_MySQL_DataTypes_Mastery.md` - Deep dive into MySQL data types (Numeric, String, Date & Time, Binary) with examples
 - `06_SQL_Database_Commands.md` - Database-level SQL commands with syntax, tips, and examples
+- `07_SQL_Table_Commands.md` - Table-level SQL commands with constraints, inserts, alterations, and drops
 
 ## Who is this for?
 
