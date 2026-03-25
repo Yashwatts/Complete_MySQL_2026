@@ -19,6 +19,7 @@ I created this repository to:
 - MySQL data types: Numeric, String, Date & Time, and Binary
 - Database-level SQL commands (CREATE, SHOW, USE, SELECT DATABASE, DROP)
 - Table-level SQL commands (CREATE TABLE, INSERT, ALTER, DROP)
+- SELECT queries with WHERE, ORDER BY, LIMIT, DISTINCT, aggregate functions, subqueries, and UNION
 - Writing and understanding basic SQL queries
 
 ## Repository Structure
@@ -30,6 +31,7 @@ I created this repository to:
 - `05_MySQL_DataTypes_Mastery.md` - Deep dive into MySQL data types (Numeric, String, Date & Time, Binary) with examples
 - `06_SQL_Database_Commands.md` - Database-level SQL commands with syntax, tips, and examples
 - `07_SQL_Table_Commands.md` - Table-level SQL commands with constraints, inserts, alterations, and drops
+- `08_SQL_SELECT.md` - SELECT queries with syntax, filtering, sorting, functions, and advanced techniques
 
 ## Who is this for?
 
