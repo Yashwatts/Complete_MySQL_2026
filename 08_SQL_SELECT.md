@@ -4,12 +4,16 @@ The SELECT statement is used to retrieve data from a database.
 
 - Select Specific Columns:
 
+Example:
+
 ```sql
 SELECT column1, column2, ...
 FROM table_name;
 ```
 
 - Select All Columns:
+
+Example:
 
 ```sql
 SELECT * FROM table_name;
@@ -67,6 +71,15 @@ Example:
 SELECT DISTINCT department FROM employees;
 ```
 
+- Mathematical Expressions: You can perform calculations directly within a SELECT statement.
+
+Example:
+
+```sql
+SELECT first_name, last_name, salary*1.1 AS 'Salary After Raise' FROM employees;
+```
+
+
 ## 4. Built-in Functions
 
 MySQL provides several functions to manipulate data during retrieval.
@@ -97,6 +110,14 @@ WHERE salary > 70000;
 ```
 
 - NOW(): Returns the current date and time.
+
+Example:
+
+```sql
+SELECT NOW() AS 'Time';
+```
+
+
 ## 5. Advanced Concepts
 
 - Subqueries: A query nested inside another query.
@@ -123,13 +144,8 @@ Example:
 ```sql
 SELECT COUNT(*), department FROM employees GROUP BY department;
 ```
-SELECT NOW() AS 'Time';
 
 
-5. Advanced Concepts
-• Subqueries: A query nested inside another query.
-Example: Finding employees whose salary is greater than average.
-SELECT * FROM employees
 ## 6. SELECT as an Expression Evaluator
 
 The SELECT statement can be used without a table to evaluate expressions, act as a calculator or test functions.
@@ -156,16 +172,4 @@ or
 
 ```sql
 SELECT 5 > 3;
-```*), department FROM employees GROUP BY department;
-
-
-6. SELECT as an Expression Evaluator
-The SELECT statement can be used without a table to evaluate expressions, act as a calculator or test functions.
-Example:
-SELECT 5 * 2;
-or
-SELECT LENGTH('Hello');
-or
-SELECT NOW() AS 'Time';
-or
-SELECT 5 > 3;
+```
