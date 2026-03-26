@@ -22,6 +22,7 @@ I created this repository to:
 - SELECT queries with WHERE, ORDER BY, LIMIT, DISTINCT, aggregate functions, subqueries, and UNION
 - WHERE clause filtering with logical operators, NULL handling, LIKE patterns, ranges, lists, and subqueries
 - Logical operators (AND, OR, NOT) to combine multiple conditions in queries
+- Comparison operators (=, !=, <>, <, >, <=, >=) with numeric, date, and string filtering
 - Writing and understanding basic SQL queries
 
 ## Repository Structure
@@ -36,6 +37,7 @@ I created this repository to:
 - `08_SQL_SELECT.md` - SELECT queries with syntax, filtering, sorting, functions, and advanced techniques
 - `09_SQL_WHERE_Clause.md` - WHERE clause queries with filtering, operators, pattern matching, NULL checks, and subqueries
 - `10_SQL_Logical_Operators.md` - Logical operators (AND, OR, NOT) for combining conditions with practical examples
+- `11_SQL_Comparison_Operators.md` - Comparison operators with practical examples across numbers, dates, and strings
 
 ## Who is this for?
 
