@@ -27,6 +27,7 @@ I created this repository to:
 - Writing and understanding basic SQL queries
 - LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
 - Aliases for columns, tables, expressions, and subqueries to improve readability
+- Using DISTINCT to eliminate duplicate rows and return unique values
 
 ## Repository Structure
 
@@ -44,6 +45,7 @@ I created this repository to:
 - `12_SQL_ORDER_BY.md` - ORDER BY clause with basic, multi-column, custom, and performance-focused sorting examples
 - `13_SQL_LIMIT_AND_OFFSET.md` - LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
 - `14_SQL_Alias.md` - Aliases for columns, tables, expressions, and subqueries to improve readability
+- `15_SQL_DISTINCT.md` - Using DISTINCT to eliminate duplicates and return unique values in result sets
 
 ## Who is this for?
 
