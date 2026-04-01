@@ -29,6 +29,7 @@ I created this repository to:
 - Aliases for columns, tables, expressions, and subqueries to improve readability
 - Using DISTINCT to eliminate duplicate rows and return unique values
 - SQL functions: string, numeric, date/time, aggregate, and more with practical examples
+- Advanced filtering with GROUP BY, HAVING, and conditional logic
 
 ## Repository Structure
 
@@ -46,8 +47,9 @@ I created this repository to:
 - `12_SQL_ORDER_BY.md` - ORDER BY clause with basic, multi-column, custom, and performance-focused sorting examples
 - `13_SQL_LIMIT_AND_OFFSET.md` - LIMIT and OFFSET for pagination, efficient data retrieval, and performance best practices
 - `14_SQL_Alias.md` - Aliases for columns, tables, expressions, and subqueries to improve readability
--- `15_SQL_DISTINCT.md` - Using DISTINCT to eliminate duplicates and return unique values in result sets
--- `16_SQL_Functions.md` - Comprehensive guide to SQL functions: string, numeric, date/time, aggregate, and more with practical examples
+- `15_SQL_DISTINCT.md` - Using DISTINCT to eliminate duplicates and return unique values in result sets
+- `16_SQL_Functions.md` - Comprehensive guide to SQL functions: string, numeric, date/time, aggregate, and more with practical examples
+- `17_SQL_Filtering_GROUP_BY_AND_HAVING.md` - GROUP BY and HAVING clauses for grouping data, filtering groups, and advanced aggregation techniques
 
 ## Who is this for?
 
