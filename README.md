@@ -36,6 +36,7 @@ I created this repository to:
 - SQL JOINs (INNER, LEFT, RIGHT, FULL workaround, CROSS, SELF) and UNION operations
 - Subqueries, correlated subqueries, EXISTS, NOT EXISTS, and subquery filtering patterns
 - UPDATE statement basics, safe update mode, timestamp tracking, and update controls
+- DELETE vs TRUNCATE, foreign key delete behaviors, and data removal best practices
 
 ## Repository Structure
 
@@ -62,6 +63,7 @@ I created this repository to:
 - `21_SQL_JOIN.md` - JOIN types, UNION/UNION ALL, full join workaround in MySQL, and performance tips
 - `22_MySQL_Subqueries.md` - Subquery fundamentals, correlated subqueries, EXISTS/NOT EXISTS, and advanced filtering examples
 - `23_MySQL_UPDATE.md` - UPDATE syntax, safe update mode, multi-column updates, timestamps, and update constraints
+- `24_Delete_Vs_Truncate.md` - DELETE and TRUNCATE behavior, foreign key handling, and practical data removal scenarios
 
 ## Who is this for?
 
