@@ -34,6 +34,7 @@ I created this repository to:
 - Foreign keys, referential integrity, relationship types, and junction tables
 - Database normalization (1NF, 2NF, 3NF), anomalies, and practical trade-offs
 - SQL JOINs (INNER, LEFT, RIGHT, FULL workaround, CROSS, SELF) and UNION operations
+- Subqueries, correlated subqueries, EXISTS, NOT EXISTS, and subquery filtering patterns
 
 ## Repository Structure
 
@@ -58,6 +59,7 @@ I created this repository to:
 - `19_SQL_Foreign_Keys.md` - Foreign key concepts, relationship types, constraints, and practical implementation examples
 - `20_Database_Normalization.md` - Normalization fundamentals, 1NF/2NF/3NF design, anomaly reduction, and denormalization trade-offs
 - `21_SQL_JOIN.md` - JOIN types, UNION/UNION ALL, full join workaround in MySQL, and performance tips
+- `22_MySQL_Subqueries.md` - Subquery fundamentals, correlated subqueries, EXISTS/NOT EXISTS, and advanced filtering examples
 
 ## Who is this for?
 
