@@ -43,6 +43,7 @@ I created this repository to:
 - SQL views in depth: CREATE VIEW, updatable vs non-updatable behavior, security benefits, CHECK OPTION and view maintenance
 - Stored procedures and functions: CALL, CREATE PROCEDURE, CREATE FUNCTION, IN/OUT/INOUT parameters, use cases and examples
 - Triggers for automation and data integrity: BEFORE/AFTER, INSERT/UPDATE/DELETE, auditing, validation, inventory updates and real-world use cases
+- SQL window functions for analytics: execution order, ROW_NUMBER, RANK, DENSE_RANK, NTILE, FIRST_VALUE, LAST_VALUE, percentiles, PARTITION BY, running totals and filtering patterns
 
 ## Repository Structure
 
@@ -76,6 +77,7 @@ I created this repository to:
 - `28_SQL_Views.md` - complete views guide: what views are, CREATE VIEW, updatable vs non-updatable views, materialized view concept, MERGE vs TEMPTABLE, read-only views, CHECK OPTION, security benefits and practical examples
 - `29_SQL_Stored_Procedures.md` - stored procedures and user-defined functions: CALL, CREATE PROCEDURE, CREATE FUNCTION, IN/OUT/INOUT parameters, determinism, restrictions, cursors, dynamic SQL, use cases, error handling and practical examples
 - `30_SQL_Triggers.md` - complete triggers guide: BEFORE/AFTER triggers, INSERT/UPDATE/DELETE triggers, OLD/NEW usage, auditing, validation, inventory updates and real-world use cases
+- `31_SQL_Window_Functions.md` - complete window functions guide: execution order, ROW_NUMBER, RANK, DENSE_RANK, NTILE, FIRST_VALUE, LAST_VALUE, PERCENT_RANK, CUME_DIST, PARTITION BY, running totals, window-vs-subquery patterns and practical analytics examples
 
 ## Who is this for?
 
