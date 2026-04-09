@@ -47,6 +47,7 @@ I created this repository to:
 - SQL CTEs (Common Table Expressions): WITH clause, multi-step query design, recursive queries, hierarchy traversal and sequence generation
 - SQL constraints for data integrity: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY vs UNIQUE, foreign-key behavior, constraint naming, validation patterns and practical schema rules
 - Real-world database design: ER diagrams, schema design workflow, surrogate vs natural keys, soft vs hard delete, audit columns, denormalization, naming conventions, e-commerce and hospital examples, many-to-many relationships and design checklists
+- SQL performance optimization: query execution order, EXPLAIN, EXPLAIN ANALYZE, filesort/temporary table warnings, index selectivity, batch tips, slow query log, caching concept, partitioning, avoiding SELECT *, sargable filters and pagination strategies
 
 ## Repository Structure
 
@@ -84,6 +85,7 @@ I created this repository to:
 - `32_SQL_CTE.md` - complete CTE guide: WITH clause, multiple CTEs, recursive queries, hierarchy traversal, date/number series, recursion safety and practical examples
 - `33_SQL_Constraints.md` - complete constraints guide: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY vs UNIQUE, foreign-key recap, ON UPDATE/ON DELETE behavior, naming conventions, ALTER usage and practical validation examples
 - `34_Database_Design.md` - complete real-world database design guide: ER diagrams, schema design workflow, surrogate vs natural keys, soft vs hard delete, audit columns, denormalization, naming conventions, e-commerce and hospital examples, many-to-many relationships, datatype selection, sharding/partitioning notes and real query examples
+- `35_SQL_Performance.md` - complete performance optimization guide: query optimization tips, query execution order, EXPLAIN, EXPLAIN ANALYZE, index usage, selectivity, filesort/temporary table warnings, batch operations, caching concept, slow query log, partitioning, avoiding SELECT * and pagination strategies
 
 ## Who is this for?
 
