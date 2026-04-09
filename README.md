@@ -45,6 +45,7 @@ I created this repository to:
 - Triggers for automation and data integrity: BEFORE/AFTER, INSERT/UPDATE/DELETE, auditing, validation, inventory updates and real-world use cases
 - SQL window functions for analytics: execution order, ROW_NUMBER, RANK, DENSE_RANK, NTILE, FIRST_VALUE, LAST_VALUE, percentiles, PARTITION BY, running totals and filtering patterns
 - SQL CTEs (Common Table Expressions): WITH clause, multi-step query design, recursive queries, hierarchy traversal and sequence generation
+- SQL constraints for data integrity: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY vs UNIQUE, foreign-key behavior, constraint naming, validation patterns and practical schema rules
 
 ## Repository Structure
 
@@ -80,6 +81,7 @@ I created this repository to:
 - `30_SQL_Triggers.md` - complete triggers guide: BEFORE/AFTER triggers, INSERT/UPDATE/DELETE triggers, OLD/NEW usage, auditing, validation, inventory updates and real-world use cases
 - `31_SQL_Window_Functions.md` - complete window functions guide: execution order, ROW_NUMBER, RANK, DENSE_RANK, NTILE, FIRST_VALUE, LAST_VALUE, PERCENT_RANK, CUME_DIST, PARTITION BY, running totals, window-vs-subquery patterns and practical analytics examples
 - `32_SQL_CTE.md` - complete CTE guide: WITH clause, multiple CTEs, recursive queries, hierarchy traversal, date/number series, recursion safety and practical examples
+- `33_SQL_Constraints.md` - complete constraints guide: NOT NULL, UNIQUE, CHECK, DEFAULT, PRIMARY KEY vs UNIQUE, foreign-key recap, ON UPDATE/ON DELETE behavior, naming conventions, ALTER usage and practical validation examples
 
 ## Who is this for?
 
